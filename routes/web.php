@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TodoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+route::get('/' , [TodoController::class,'index']) ;//listing des taches
+route::post('/add' , [TodoController::class,'store'])->name('add') ;// ajouter des taches
+route::get('/upd' , [TodoController::class,'update'])->name('upd') ;//url de mise a jour de la tache
+route::get('/del' , [TodoController::class,'delete'])->name('del') ;//suppression de la tache
