@@ -3,6 +3,7 @@
 @section('main')
     <!-- component -->
 <div class="h-100 w-full flex items-center justify-center bg-white">
+    
 	<div class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded shadow p-6 m-4 w-full lg:w-3/4 lg:max-w-lg">
         <div class="mb-4">
             <h1 class="text-white text-3xl font-serif underline text-center ">Todo List</h1>
@@ -85,14 +86,14 @@
                 <a href="{{route('upd',$itemTodo->id)}}" class="flex-no-shrink p-2 ml-4 mr-2 border-2 rounded-lg hover:text-white text-green border-green bg-violet-400"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
                     <path fill-rule="evenodd" d="M18 5.25a2.25 2.25 0 00-2.012-2.238A2.25 2.25 0 0013.75 1h-1.5a2.25 2.25 0 00-2.238 2.012c-.875.092-1.6.686-1.884 1.488H11A2.5 2.5 0 0113.5 7v7h2.25A2.25 2.25 0 0018 11.75v-6.5zM12.25 2.5a.75.75 0 00-.75.75v.25h3v-.25a.75.75 0 00-.75-.75h-1.5z" clip-rule="evenodd" />
                     <path fill-rule="evenodd" d="M3 6a1 1 0 00-1 1v10a1 1 0 001 1h8a1 1 0 001-1V7a1 1 0 00-1-1H3zm6.874 4.166a.75.75 0 10-1.248-.832l-2.493 3.739-.853-.853a.75.75 0 00-1.06 1.06l1.5 1.5a.75.75 0 001.154-.114l3-4.5z" clip-rule="evenodd" />
-                  </svg>
-                  
+                </svg>
+                
                 </a>
                 <a href="{{route('del',$itemTodo->id)}}" class="flex-no-shrink p-2 ml-2 border-2 rounded-lg text-red border-red hover:text-white bg-violet-400"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
                     <path d="M2 3a1 1 0 00-1 1v1a1 1 0 001 1h16a1 1 0 001-1V4a1 1 0 00-1-1H2z" />
                     <path fill-rule="evenodd" d="M2 7.5h16l-.811 7.71a2 2 0 01-1.99 1.79H4.802a2 2 0 01-1.99-1.79L2 7.5zm5.22 1.72a.75.75 0 011.06 0L10 10.94l1.72-1.72a.75.75 0 111.06 1.06L11.06 12l1.72 1.72a.75.75 0 11-1.06 1.06L10 13.06l-1.72 1.72a.75.75 0 01-1.06-1.06L8.94 12l-1.72-1.72a.75.75 0 010-1.06z" clip-rule="evenodd" />
-                  </svg>
-                  
+                </svg>
+                
                 </a>
             </div>
             @empty
